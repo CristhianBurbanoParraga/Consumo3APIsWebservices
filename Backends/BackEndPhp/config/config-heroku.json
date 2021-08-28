@@ -1,0 +1,9 @@
+{
+    "connection" : {
+        "host": "ec2-54-236-234-167.compute-1.amazonaws.com",
+        "user": "pdjigjmxugppgq",
+        "password": "13c48f9e18cdada36e4dc72532deb429136ac77b06632cd9470ea1cf99d1782b",
+        "database": "dd677dh58p6bj9",
+        "port": "5432"
+    }
+}

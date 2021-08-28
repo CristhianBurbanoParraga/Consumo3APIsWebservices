@@ -1,0 +1,9 @@
+{
+    "connection" : {
+        "host": "localhost",
+        "user": "postgres",
+        "password": "criss97",
+        "database": "kiosquito",
+        "port": "5432"
+    }
+}

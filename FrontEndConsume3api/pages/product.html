@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>GESTI&Oacute;N DE PIQUEOS</h1>
+        <button type="button" id="return" class="btn btn-link">Regresar</button>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Registrar item</h3>
+                <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Nombre el item">
+                <input type="number" class="form-control mb-3" id="price" name="price" placeholder="Precio">
+                <input type="text" class="form-control mb-3" id="description" name="description" placeholder="Breve descripci&oacute;n">
+                <button type="button" id="addproduct" class="btn btn-success">Registrar</button>
+                <button type="button" id="btnconfig" class="btn btn-secondary">Configuraci&oacute;n</button>
+                
+                <div id="config">
+                    <p>Gesti&oacute;n de datos</p>
+                    <input type="number" class="form-control mb-3" id="id" name="id" placeholder="ID de la venta">
+                    <button type="button" id="updateproduct" class="btn btn-warning">Actualizar</button>
+                    <button type="button" id="deleteproduct" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>Piqueos Registrados</h3>
+                <table class="table">
+                    <thead class="table-success table-striped">
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Descripci&oacute;n</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../js/master-product.js" type="text/javascript"></script>
+</body>
+
+</html>
